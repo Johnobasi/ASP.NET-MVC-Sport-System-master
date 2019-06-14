@@ -28,6 +28,10 @@
                     {
                         <li>@Html.ActionLink("Create Team", "Create", "Teams")</li>
                     }
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Edit Team", "Edit", "Teams")</li>
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
