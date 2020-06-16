@@ -11,6 +11,7 @@
         public DateTime BirthDate { get; set; }
 
         public double Height { get; set; }
+        public string Address { get; set; }
 
         public int? TeamId { get; set; }
 
